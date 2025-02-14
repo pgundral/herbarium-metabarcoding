@@ -4,29 +4,40 @@ library(jsonlite)
 library(ritis)
 library(taxize)
 
+# read in S2 data set and set all NA to 0
 bold <- read.csv("./data/Kartzinel_et_al_Dataset_S2_20250129.csv")
-
 bold <- bold %>% mutate(across(everything(), ~ replace(., is.na(.), 0)))
+# head(bold)
 
-#head(bold)
-
-no_barcode <- bold %>%
+# find no-barcode families by summing over seq regions
+barcode_sums <- bold %>%
   mutate(row_sum = rowSums(across(-c(ITIS.Family.Name, ITIS.Species.Count, BOLD.Specimen.Count, 
                                      BOLD.Species.Count)))) 
 
-head(no_barcode)
+# head(barcode_sums)
 
-families <- arrange(no_barcode, by = no_barcode$row_sum) %>% select(ITIS.Family.Name, row_sum)
+# find appropriate families by sorting sums and filtering to 0 sums
+nb_families <- arrange(barcode_sums, by = barcode_sums$row_sum) %>% select(ITIS.Family.Name, row_sum)
+nb_families <- nb_families %>% filter(row_sum <= 0) # only families with NO seq data
 
-families <- families %>% filter(row_sum <= 0)
+# find all angiosperm families from ITIS 'Magnoliopsida'
+angio <- downstream('Magnoliopsida', db = 'itis', downto = 'family')
+angio_families <- angio$Magnoliopsida$taxonname
 
-tsn <- get_tsn(families$ITIS.Family.Name[1:30])
+# subset all no-barcode families to only angiosperm families
+families <- nb_families$ITIS.Family.Name[nb_families$ITIS.Family.Name %in% 
+                        angio_families]
 
+write.csv(families, file='./data/families.csv', row.names=FALSE, 
+quote=FALSE) # write to csv
+
+# taxize::get_tsn() to get ITIS Taxonomic Serial No.s
+tsn <- get_tsn(families)
+write.csv(tsn, file='./data/tsn.csv', row.names=FALSE, quote=FALSE) # write to csv
+
+# find all downstream genera using taxize::downstream()
 genera <- downstream(tsn, db = 'itis', downto = 'genus')
-
 genera_list <- do.call("rbind", genera)$taxonname 
-
 genera_list <- genera_list[genera_list != "No data"]
-
 write.csv(genera_list, file='./data/genera.csv', row.names=FALSE,
-col.names=FALSE)
+quote=FALSE) # write to csv
