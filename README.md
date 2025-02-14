@@ -1,6 +1,6 @@
 # Herbarium Research
 
-## (1) Metabarcoding study
+## Metabarcoding study
 ### Title
 Sequencing Yellowstone-occurring species in 'no-barcode' families, leveraging existing herbarium records 
 
