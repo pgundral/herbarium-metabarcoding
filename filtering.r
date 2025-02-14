@@ -28,4 +28,4 @@ genera_list <- do.call("rbind", genera)$taxonname
 
 genera_list <- genera_list[genera_list != "No data"]
 
-write.csv(genera_list, file='./data/genera.csv')
+write.csv(genera_list, file='./data/genera.csv', row.names=FALSE)
