@@ -15,3 +15,6 @@ Currently, there exists a gap in available genetic data for various “no-barcod
 6. Najadaceae: Najas flexilis, PBRU00067833
 
 **Note: these families use [ITIS](https://itis.gov/) designations**
+
+## Rhode Island Flora (BIOL0940D) archival work
+*WIP*
