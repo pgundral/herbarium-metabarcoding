@@ -1,4 +1,4 @@
-# Herbarium Research
+# Brown University Herbarium (BRU) research
 
 ## Metabarcoding study
 ### Title
