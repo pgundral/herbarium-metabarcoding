@@ -16,9 +16,9 @@ barcode_sums <- bold %>%
 
 # head(barcode_sums)
 
-# find appropriate families by sorting sums and filtering to 0 sums
+# find appropriate families by sorting sums and filtering to a given sum
 nb_families <- arrange(barcode_sums, by = barcode_sums$row_sum) %>% select(ITIS.Family.Name, row_sum)
-nb_families <- nb_families %>% filter(row_sum <= 0) # only families with NO seq data
+nb_families <- nb_families %>% filter(row_sum <= 50) # returns between 0 and 100
 
 # find all angiosperm families from ITIS 'Magnoliopsida'
 angio <- downstream('Magnoliopsida', db = 'itis', downto = 'family')
@@ -43,4 +43,4 @@ write.csv(genera_list, file='./data/genera.csv', row.names=FALSE,
 quote=FALSE) # write to csv
 
 # collapse into searchable term
-write(paste(genera_list, collapse = ', '), 'search.txt')
+write(paste(genera_list, collapse = ', '), 'search_50.txt')
