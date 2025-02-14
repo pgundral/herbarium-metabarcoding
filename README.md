@@ -16,5 +16,9 @@ Currently, there exists a gap in available genetic data for various “no-barcod
 
 **Note: these families use [ITIS](https://itis.gov/) designations**
 
+### Methods
+`filtering.r` uses rITIS and taxize to call the ITIS API and identify genera circumscribed by no-barcode families listed in the metabarcoding database. 
+@output `genera.csv` and `search.txt` store the genera to be queried by `search.r`
+
 ## Rhode Island Flora (BIOL0940D) archival work
 *WIP*
