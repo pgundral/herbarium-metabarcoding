@@ -214,9 +214,9 @@ ids,class,match,multiple_matches,pattern_match,uri
 39095,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=39095
 897318,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=897318
 22247,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=22247
-847582,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=847582
 38978,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=38978
 895194,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=895194
+847582,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=847582
 895274,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=895274
 895169,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=895169
 896780,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=896780
@@ -242,8 +242,8 @@ ids,class,match,multiple_matches,pattern_match,uri
 35416,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=35416
 27056,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=27056
 18219,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=18219
-22318,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=22318
 19014,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=19014
+22318,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=22318
 18401,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=18401
 955077,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=955077
 42408,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=42408
@@ -264,8 +264,8 @@ ids,class,match,multiple_matches,pattern_match,uri
 29298,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=29298
 846636,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=846636
 895275,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=895275
-21400,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=21400
 18406,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=18406
+21400,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=21400
 23442,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=23442
 43324,tsn,found,FALSE,FALSE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=43324
 955073,tsn,found,TRUE,TRUE,https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=955073
