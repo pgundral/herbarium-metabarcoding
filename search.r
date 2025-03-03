@@ -16,7 +16,7 @@ select(total_barcodes, trnL_barcodes, ITIS_Family, BRU_Family, genus, scientific
 country, stateProvince, occurrenceID)
 
 # SPECIMENS FOR SAMPLING NO YEAR RESTRICTION ONLY 0 BARCODE #
-specimens <- match %>% arrange(total_barcodes, trnL_barcodes, ITIS_Family, genus, desc(year))
+specimens <- match %>% arrange(total_barcodes, trnL_barcodes, ITIS_Family, desc(year), genus)
 sliced <- specimens %>% group_by(ITIS_Family) %>% slice(1) %>% ungroup() %>% arrange(total_barcodes, trnL_barcodes)
 write.csv(specimens, file='./data/specimens.csv')
 write.csv(sliced, file='./data/sliced_specimens.csv')
