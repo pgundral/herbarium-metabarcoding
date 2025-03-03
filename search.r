@@ -19,7 +19,7 @@ country, stateProvince, occurrenceID)
 specimens <- match %>% arrange(total_barcodes, trnL_barcodes, ITIS_Family, genus, desc(year))
 sliced <- specimens %>% group_by(ITIS_Family) %>% slice(1) %>% ungroup() %>% arrange(total_barcodes, trnL_barcodes)
 write.csv(specimens, file='./data/specimens.csv')
-write.csv(sliced_specimens, file='./data/sliced_specimens.csv')
+write.csv(sliced, file='./data/sliced_specimens.csv')
 
 # Identify only specimens from the USA from 1975-present
 #specimens <- match %>% filter(year >= 1975, country == 'United States of America')
