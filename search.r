@@ -13,7 +13,7 @@ colnames(genera) <- c('ITIS_Family','genus','total_barcodes', 'trnL_barcodes')
 # Find only specimens matching the genera
 match <- inner_join(occurrences, genera, by = "genus") %>% mutate(BRU_Family = family) %>%
 select(total_barcodes, trnL_barcodes, ITIS_Family, BRU_Family, genus, scientificName, year, 
-country, stateProvince, occurrenceID)
+country, stateProvince, occurrenceID, catalogNumber)
 
 # SPECIMENS FOR SAMPLING NO YEAR RESTRICTION ONLY 0 BARCODE #
 specimens <- match %>% arrange(total_barcodes, trnL_barcodes, ITIS_Family, desc(year), genus)
@@ -32,9 +32,11 @@ yellowstone$`Scientific Name` <- sub(" var\\..*", "", yellowstone$`Scientific Na
 
 # Narrow identified BRU specimens that occur in yellowstone
 yellowstone_specimens <- specimens[which(specimens$scientificName %in% yellowstone$`Scientific Name`),]
+sliced_yellowstone_specimens <- yellowstone_specimens %>% group_by(ITIS_Family) %>% slice(1) %>% ungroup()
 
 # write YELL specimen IDs to CSV
 write.csv(yellowstone_specimens, file='./data/yellowstone_specimens.csv')
+write.csv(sliced_yellowstone_specimens, file='./data/yellowstone_specimens_sliced.csv')
 write(paste(yellowstone_specimens$occurrenceID, collapse = ', '), 'yellowstone_specimen_ids.txt')
 
 # write other specimen IDs to CSV
