@@ -1,0 +1,19 @@
+notes,collectionNumber,catalogNumber,truncatedCatalogNumber,scientificName,trnL_dna_concentration,trnL_dnac_notes,rbcL_dna_concentration,rbcL_dnac_notes,year,yearEstimate,yearEstimateNotes,trnL_recovered,rbcL_recovered
+,1,PBRU00050298,50298,Linnaea borealis,,,,,2015,,,TRUE,TRUE
+,2,PBRU00055711,55711,Phacelia tanacetifolia,,,,,2010,,,TRUE,TRUE
+,3,PBRU00078736,78736,Diervilla lonicera,,,,,2020,,,TRUE,TRUE
+,4,PBRU00073743,73743,Loxsoma cunninghamii,2.54,,3.38,no show on gel,NA,1879,"Probably collected before, New Zealand Ferns",TRUE,
+,5,PBRU00077056,77056,Onoclea sensibilis,4.56,,,,2021,,,,TRUE
+,6,PBRU00047866,47866,Hydrolea corymbosa,,,,,1872,,,TRUE,
+,7,PBRU00070255,70255,Ximenia americana,,,,,1876,,,,
+,8,PBRU00064538,64538,Anemia adiantifolia,,,,,1938,,,TRUE,
+,9,PBRU00047050,47050,Anacampseros retusa,4.34,,3.32,,2014,,,,
+,10,PBRU00047499,47499,Sphenoclea zeylanica,,,,,NA,1856,"Olney, died 1879. before 1856",,
+,11,PBRU00039368,39368,Batis maritima,4.88,,,,NA,1860,1830 to 1890,,
+,12,PBRU00025308,25308,Nephrolepis exaltata,3.88,,,,1874,,,,
+,13,PBRU00066730,66730,Lindsaea nervosa,5.06,,3.32,,NA,1870,"Stout, collection owner, died 1882",,
+,14,PBRU00072739,72739,Didymochlaena lunulata,2.70,no show on gel,2.34,no show on gel,1898,,,,
+,15,PBRU00071780,71780,Gelsemium sempervirens,,,,,2018,,,TRUE,TRUE
+,16,PBRU00064307,64307,Suriana maritima,5.66,,3.82,,NA,1879,"Upper bound. Probably coll. Chapman, from Olney collections",,TRUE
+,17,PBRU00041911,41911,Frankenia jamesii,1.21,no show on gel,0.706,no show on gel,1950,,,,
+,18,PBRU00021776,21776,Butomus umbellatus,,,,,1937,,,,
