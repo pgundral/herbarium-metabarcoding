@@ -24,5 +24,8 @@ Currently, there exists a gap in available genetic data for various “no-barcod
 ### Output 
 `genera.csv` and `searchable.txt` store the genera to be queried by `search.r` from the BRU specimen table. 
 
+### Poster
+!(figures/pranav_capstone_poster_final.png)
+
 ## Rhode Island Flora (BIOL0940D) archival work
 *WIP*
