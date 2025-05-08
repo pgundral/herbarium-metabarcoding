@@ -26,6 +26,3 @@ Currently, there exists a gap in available genetic data for various “no-barcod
 
 ### Poster
 ![poster](figures/pranav_capstone_poster_final.png)
-
-## Rhode Island Flora (BIOL0940D) archival work
-*WIP*
