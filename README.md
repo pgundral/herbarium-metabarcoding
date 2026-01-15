@@ -28,6 +28,7 @@ The BRU herbarium's metadata can be downloaded from the [Consortium of Northeast
 
 The barcode availability data from the review by [Kartzinel et. al. 2025](https://doi.org/10.1111/mec.17712) can be accessed from the supporting information published with the paper in [Molecular Ecology](https://onlinelibrary.wiley.com/doi/10.1111/mec.17712).
 
+The list of vascular plant species documented at Yellowstone National Park can be accessed through the [NPSpecies portal](https://irma.nps.gov/NPSpecies/) under [this search](https://irma.nps.gov/NPSpecies/Search/SpeciesList/YELL).
 
 ### Paper
 A research article that details the genomic methods and findings from this project can be found in `paper.pdf` or here:
