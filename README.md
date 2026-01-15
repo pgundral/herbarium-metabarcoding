@@ -16,7 +16,7 @@ Currently, there exists a gap in available genetic data for various “no-barcod
 **Note: these families use [ITIS](https://itis.gov/) designations**
 
 ### Methods
-THe `src/` directory contains R scripts for specimen idenfitication and Jupyter Notebooks for visualization of the results post-sequencing.
+The `src/` directory contains R scripts for specimen idenfitication and Jupyter Notebooks for visualization of the results post-sequencing.
 * `filtering.r` uses rITIS and taxize to call the ITIS API and identify genera circumscribed by no-barcode families listed in the metabarcoding database. After multi-constraint filtering, `genera.csv` and `searchable.txt` store the appropriate genera to be queried within the Herbarium's database
 * `search.r` searches the BRU specimen table to identify appropriate specimens and rank them by their barcoding value
 * `plots.ipynb` uses `ggplot` to produce figures used in the final poster (found in `figures/`)
