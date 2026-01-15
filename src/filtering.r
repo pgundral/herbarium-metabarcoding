@@ -5,7 +5,7 @@ library(ritis)
 library(taxize)
 
 # read in S2 data set and set all NA to 0
-bold <- read.csv("./data/Kartzinel_et_al_Dataset_S2_20250129.csv")
+bold <- read.csv("./data/raw/Kartzinel_et_al_Dataset_S2_20250129.csv")
 bold <- bold %>% mutate(across(everything(), ~ replace(., is.na(.), 0)))
 # head(bold)
 
@@ -41,13 +41,13 @@ families <- nb_families %>% filter(ITIS.Family.Name %in% tracheo_families)
 families <- families %>% arrange(row_sum, trnL_count)
 
 # write families to csv
-write.csv(families, file='./data/families.csv', row.names=FALSE, 
+write.csv(families, file='./data/processed/families.csv', row.names=FALSE, 
 quote=FALSE)
 
 # taxize::get_tsn() to get ITIS Taxonomic Serial No.s
 tsn <- get_tsn(families$ITIS.Family.Name)
 # write tsns to csv
-write.csv(tsn, file='./data/tsn.csv', row.names=FALSE, quote=FALSE)
+write.csv(tsn, file='./data/processed/tsn.csv', row.names=FALSE, quote=FALSE)
 
 # find all downstream genera using taxize::downstream()
 genera <- downstream(tsn, db = 'itis', downto = 'genus')
@@ -62,8 +62,8 @@ genera_list <- inner_join(families, genera_list, by = "parentname") %>%
 genera_list <- genera_list %>% arrange(total_barcodes, trnL_barcodes)
 
 # write genera to csv
-write.csv(genera_list, file='./data/genera.csv', row.names=FALSE,
+write.csv(genera_list, file='./data/processed/genera.csv', row.names=FALSE,
 quote=FALSE)
 
 # collapse into searchable term
-write(paste(genera_list$taxonname, collapse = ', '), 'searchable.txt')
+write(paste(genera_list$taxonname, collapse = ', '), './data/processed/searchable.txt')
